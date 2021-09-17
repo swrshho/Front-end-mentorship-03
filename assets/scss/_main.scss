@@ -2,7 +2,7 @@ body {
   background-image: url(/assets/images/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   height: 100vh;
 }
 
@@ -32,6 +32,27 @@ body {
       color: $grayishRed;
       font-size: 2.7rem;
       margin-left: 0.7rem;
+    }
+  }
+}
+
+.main {
+  height: calc(100% - 77px);
+
+  .container {
+    border: solid 3px white;
+    background-color: $white;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  .inputs {
+    .seperator {
+      width: 80%;
+      display: block;
+      margin: 1.3rem 0;
+      height: 0.2rem;
+      background-color: $darkGray;
     }
   }
 }
