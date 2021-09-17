@@ -1,0 +1,39 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+// layout classes
+
+.flex {
+  display: flex;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+// typography
+
+.tt-u {
+  text-transform: uppercase;
+}
+
+.tt-n {
+  text-transform: none;
+}
+
+// other stylings
+.cp {
+  cursor: pointer;
+}
