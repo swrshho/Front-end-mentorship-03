@@ -26,12 +26,22 @@ body {
       font-size: 1.6rem;
       font-weight: 500;
       color: $azureGreen;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        background-color: $azureGreen;
+        color: $white;
+        .fa-house-user {
+          color: $white;
+        }
+      }
     }
 
     .fa-house-user {
       color: $grayishRed;
       font-size: 2.7rem;
       margin-left: 0.7rem;
+      transition: all 200ms ease-in-out;
     }
   }
 }
@@ -113,10 +123,17 @@ body {
     .search-btn {
       color: $white;
       background-color: $azureGreen;
-      border: none;
+      border: solid 2px transparent;
       font-size: 2.3rem;
       padding: 1rem 5rem;
       border-radius: 17px;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        color: $azureGreen;
+        background-color: $white;
+        border: solid 2px $azureGreen;
+      }
     }
   }
 }

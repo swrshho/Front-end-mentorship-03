@@ -100,12 +100,25 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: #16a085;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.header .navbar #login:hover {
+  background-color: #16a085;
+  color: #ffffff;
+}
+
+.header .navbar #login:hover .fa-house-user {
+  color: #ffffff;
 }
 
 .header .navbar .fa-house-user {
   color: #b75d5d;
   font-size: 2.7rem;
   margin-left: 0.7rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .main {
@@ -193,9 +206,17 @@ body {
 .main .button .search-btn {
   color: #ffffff;
   background-color: #16a085;
-  border: none;
+  border: solid 2px transparent;
   font-size: 2.3rem;
   padding: 1rem 5rem;
   border-radius: 17px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.main .button .search-btn:hover {
+  color: #16a085;
+  background-color: #ffffff;
+  border: solid 2px #16a085;
 }
 /*# sourceMappingURL=style.css.map */
