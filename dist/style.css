@@ -125,15 +125,41 @@ body {
   height: calc(100% - 77px);
 }
 
+@media (min-width: 800px) {
+  .main .container,
+  .main .inputs-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .main .container {
   border: solid 3px white;
   background-color: #ffffff;
   padding: 2rem;
   border-radius: 20px;
+  width: 60%;
+}
+
+@media (min-width: 800px) {
+  .main .container {
+    width: 90%;
+    min-width: 74rem;
+    max-width: 88rem;
+  }
 }
 
 .main .inputs {
+  width: 100%;
   margin-bottom: 4rem;
+}
+
+@media (min-width: 800px) {
+  .main .inputs {
+    margin-bottom: 0;
+  }
 }
 
 .main .inputs .seperator {
@@ -142,6 +168,14 @@ body {
   margin: 1.3rem 0;
   height: 0.2rem;
   background-color: #665555;
+}
+
+@media (min-width: 800px) {
+  .main .inputs .seperator {
+    margin: 0;
+    height: 5.7rem;
+    width: 0.2rem;
+  }
 }
 
 .main .inputs li {
@@ -182,6 +216,12 @@ body {
   color: transparent;
 }
 
+@media (min-width: 800px) {
+  .main .inputs input[type="date"] {
+    width: 90%;
+  }
+}
+
 .main .inputs input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0;
@@ -204,6 +244,7 @@ body {
 }
 
 .main .button .search-btn {
+  display: block;
   color: #ffffff;
   background-color: #16a085;
   border: solid 2px transparent;

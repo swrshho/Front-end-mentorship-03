@@ -47,18 +47,43 @@ body {
 }
 
 .main {
+  @media (min-width: 800px) {
+    .container,
+    .inputs-list {
+      flex-direction: row;
+    }
+  }
+
   height: calc(100% - 77px);
 
   .container {
+    @media (min-width: 800px) {
+      width: 90%;
+      min-width: 74rem;
+      max-width: 88rem;
+    }
+
     border: solid 3px white;
     background-color: $white;
     padding: 2rem;
     border-radius: 20px;
+    width: 60%;
   }
 
   .inputs {
+    @media (min-width: 800px) {
+      margin-bottom: 0;
+    }
+
+    width: 100%;
     margin-bottom: 4rem;
     .seperator {
+      @media (min-width: 800px) {
+        margin: 0;
+        height: 5.7rem;
+        width: 0.2rem;
+      }
+
       width: 80%;
       display: block;
       margin: 1.3rem 0;
@@ -91,6 +116,10 @@ body {
     }
 
     input[type="date"] {
+      @media (min-width: 800px) {
+        width: 90%;
+      }
+
       position: relative;
       padding: 0.8rem 2.5rem;
       border: none;
@@ -121,6 +150,7 @@ body {
 
   .button {
     .search-btn {
+      display: block;
       color: $white;
       background-color: $azureGreen;
       border: solid 2px transparent;
