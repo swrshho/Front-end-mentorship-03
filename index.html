@@ -10,7 +10,41 @@
   <title>Travel With Us</title>
 </head>
 <body>
-  
+  <header class="header">
+    <nav class="navbar">
+      <h1 id="logo">Travel With Us</h1>
+      <a href="#" id="login">Account <i class="fas fa-house-user"></i></a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="inputs">
+        <ul class="inputs-list">
+          <li class="input-item txt-input">
+            <label for="region">where you go?</label><br>
+            <input type="text" id="region" name="region" placeholder="select a region">
+          </li>
+          <span class="seperator"></span>
+          <li class="input-item">
+            <label for="date-in">check in</label>
+            <input type="date" id="date-in" name="date-in" placeholder="add a date">
+          </li>
+          <span class="seperator"></span>
+          <li class="input-item">
+            <label for="date-out">check out</label>
+            <input type="date" id="date-out" name="date-out" placeholder="add a date">
+          </li>
+        </ul>
+      </div>
+      
+      <div class="button">
+        <button type="submit" class="search-btn">
+          search
+        </button>
+      </div>
+    </div>
+  </main>
 
   <script src="./assets/js/script.js"></script>
 </body>
