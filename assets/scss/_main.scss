@@ -47,12 +47,76 @@ body {
   }
 
   .inputs {
+    margin-bottom: 4rem;
     .seperator {
       width: 80%;
       display: block;
       margin: 1.3rem 0;
       height: 0.2rem;
       background-color: $darkGray;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    label {
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    input {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .txt-input {
+      input {
+        padding: 1rem 0;
+        border: none;
+      }
+    }
+
+    input[type="date"] {
+      position: relative;
+      padding: 0.8rem 2.5rem;
+      border: none;
+      color: transparent;
+
+      &::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        color: transparent;
+        background: transparent;
+        cursor: pointer;
+      }
+
+      &::before {
+        content: "add a date";
+        width: 100%;
+        color: $gray;
+        font-family: "Roboto";
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .button {
+    .search-btn {
+      color: $white;
+      background-color: $azureGreen;
+      border: none;
+      font-size: 2.3rem;
+      padding: 1rem 5rem;
+      border-radius: 17px;
     }
   }
 }

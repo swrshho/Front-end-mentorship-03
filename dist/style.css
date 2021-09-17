@@ -119,11 +119,83 @@ body {
   border-radius: 20px;
 }
 
+.main .inputs {
+  margin-bottom: 4rem;
+}
+
 .main .inputs .seperator {
   width: 80%;
   display: block;
   margin: 1.3rem 0;
   height: 0.2rem;
   background-color: #665555;
+}
+
+.main .inputs li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .inputs label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.main .inputs input {
+  text-align: center;
+  cursor: pointer;
+}
+
+.main .inputs .txt-input input {
+  padding: 1rem 0;
+  border: none;
+}
+
+.main .inputs input[type="date"] {
+  position: relative;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  color: transparent;
+}
+
+.main .inputs input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.main .inputs input[type="date"]::before {
+  content: "add a date";
+  width: 100%;
+  color: #979494;
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+
+.main .button .search-btn {
+  color: #ffffff;
+  background-color: #16a085;
+  border: none;
+  font-size: 2.3rem;
+  padding: 1rem 5rem;
+  border-radius: 17px;
 }
 /*# sourceMappingURL=style.css.map */
