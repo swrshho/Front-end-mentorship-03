@@ -54,6 +54,10 @@ a {
           justify-content: space-between;
 }
 
+body {
+  font-family: "Roboto";
+}
+
 .tt-u {
   text-transform: uppercase;
 }
@@ -64,5 +68,43 @@ a {
 
 .cp {
   cursor: pointer;
+}
+
+body {
+  background-image: url(/assets/images/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.header {
+  padding: 1rem 0;
+  margin-top: 0.7rem;
+}
+
+.header .navbar {
+  width: 85%;
+}
+
+.header .navbar #logo {
+  color: #16a085;
+  font-size: 2.6rem;
+  font-weight: 400;
+}
+
+.header .navbar #login {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #16a085;
+}
+
+.header .navbar .fa-house-user {
+  color: #b75d5d;
+  font-size: 2.7rem;
+  margin-left: 0.7rem;
 }
 /*# sourceMappingURL=style.css.map */
