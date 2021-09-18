@@ -209,38 +209,16 @@ body {
   border: none;
 }
 
-.main .inputs input[type="date"] {
-  position: relative;
-  padding: 0.8rem 2.5rem;
+.main .inputs .date-input {
+  margin: 0 1rem;
+  padding: 1rem 2rem;
   border: none;
-  color: transparent;
 }
 
 @media (min-width: 800px) {
-  .main .inputs input[type="date"] {
+  .main .inputs .date-input {
     width: 90%;
   }
-}
-
-.main .inputs input[type="date"]::-webkit-calendar-picker-indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  color: transparent;
-  background: transparent;
-  cursor: pointer;
-}
-
-.main .inputs input[type="date"]::before {
-  content: "add a date";
-  width: 100%;
-  color: #979494;
-  font-family: "Roboto";
-  font-size: 1.5rem;
 }
 
 .main .button .search-btn {

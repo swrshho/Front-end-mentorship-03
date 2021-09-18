@@ -115,36 +115,13 @@ body {
       }
     }
 
-    input[type="date"] {
+    .date-input {
       @media (min-width: 800px) {
         width: 90%;
       }
-
-      position: relative;
-      padding: 0.8rem 2.5rem;
+      margin: 0 1rem;
+      padding: 1rem 2rem;
       border: none;
-      color: transparent;
-
-      &::-webkit-calendar-picker-indicator {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: auto;
-        height: auto;
-        color: transparent;
-        background: transparent;
-        cursor: pointer;
-      }
-
-      &::before {
-        content: "add a date";
-        width: 100%;
-        color: $gray;
-        font-family: "Roboto";
-        font-size: 1.5rem;
-      }
     }
   }
 

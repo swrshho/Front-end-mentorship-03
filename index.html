@@ -7,9 +7,11 @@
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"
   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="./dist/style.css">
   <title>Travel With Us</title>
 </head>
+
 <body>
   <header class="header flex jc-c">
     <nav class="navbar flex jc-sb ai-c">
@@ -24,17 +26,18 @@
         <ul class="inputs-list flex fd-c ai-c">
           <li class="input-item txt-input">
             <label for="region">where you go?</label>
-            <input type="text" id="region" name="region" placeholder="select a region">
+            <input type="text" id="region" name="region" list="suggestions" placeholder="select a region">
+            <datalist id="suggestions"></datalist>
           </li>
           <span class="seperator"></span>
           <li class="input-item">
             <label for="date-in">check in</label>
-            <input type="date" id="date-in" name="date-in" class="date-1">
+            <input type="date" id="date-in" name="date-in" class="date-input" placeholder="add a date">
           </li>
           <span class="seperator"></span>
           <li class="input-item">
             <label for="date-out">check out</label>
-            <input type="date" id="date-out" name="date-out" class="date-2">
+            <input type="date" id="date-out" name="date-out" class="date-input" placeholder="add a date">
           </li>
         </ul>
       </div>
@@ -48,5 +51,11 @@
   </main>
 
   <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("input[type=date]", {
+      minDate: "today"
+    });
+  </script>
 </body>
 </html>
