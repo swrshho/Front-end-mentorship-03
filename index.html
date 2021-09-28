@@ -7,7 +7,6 @@
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="./dist/style.css">
   <title>Travel With Us</title>
 </head>
@@ -32,12 +31,24 @@
           <span class="seperator"></span>
           <li class="input-item">
             <label for="date-in">check in</label>
-            <input type="date" id="date-in" name="date-in" class="date-input" placeholder="add a date">
+            <input type="date"
+            class="date-input"
+            id="date-in"
+            name="date-in" 
+            placeholder="Add a date"
+						onfocus="this.type='date'"
+						onblur="this.type='text'">
           </li>
           <span class="seperator"></span>
           <li class="input-item">
             <label for="date-out">check out</label>
-            <input type="date" id="date-out" name="date-out" class="date-input" placeholder="add a date">
+            <input type="date"
+            id="date-out"
+            name="date-out"
+            class="date-input"
+            placeholder="add a date"
+            onfocus="this.type='date'"
+						onblur="this.type='text'">
           </li>
         </ul>
       </div>
@@ -51,11 +62,5 @@
   </main>
 
   <script src="./assets/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script>
-    flatpickr("input[type=date]", {
-      minDate: "today"
-    });
-  </script>
 </body>
 </html>
