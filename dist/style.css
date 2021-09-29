@@ -80,6 +80,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(/assets/images/bg-mobile.jpg);
 }
 
 @media (min-width: 500px) {

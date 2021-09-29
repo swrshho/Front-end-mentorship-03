@@ -1,20 +1,29 @@
 body {
+  // background image styles
   background-image: url(/assets/images/bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
+  // different background images for different divices
+  // mobile
+  background-image: url(/assets/images/bg-mobile.jpg);
+
+  // medium tablet
   @media (min-width: 500px) {
     background-image: url(/assets/images/bg-tablet-medium.jpg);
   }
+  // large tablet
   @media (min-width: 700px) {
     background-image: url(/assets/images/bg-tablet-large.jpg);
   }
+  // desktop
   @media (min-width: 800px) {
     background-image: url(/assets/images/bg-desktop.jpg);
   }
 }
 
+// Header and navbar styles
 .header {
   position: fixed;
   width: 100%;
@@ -48,6 +57,7 @@ body {
       }
     }
 
+    // Styles for account icon
     .fa-house-user {
       color: $grayishRed;
       font-size: 2.7rem;
@@ -101,6 +111,7 @@ body {
       align-items: center;
       width: 90%;
 
+      // input seperators styles
       &:nth-child(2) {
         @media (min-width: 800px) {
           border-left-style: solid;
@@ -124,6 +135,7 @@ body {
       font-weight: 500;
     }
 
+    // Inputs styles
     input {
       text-align: center;
       cursor: pointer;
@@ -152,16 +164,6 @@ body {
         }
       }
     }
-
-    // .date-input {
-    //   @media (min-width: 800px) {
-    //     width: 90%;
-    //   }
-
-    //   padding: 1rem 2rem;
-    //   border: none;
-    //   width: 100%;
-    // }
   }
 
   .button {
