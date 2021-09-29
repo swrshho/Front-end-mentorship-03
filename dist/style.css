@@ -54,6 +54,11 @@ a {
           justify-content: space-between;
 }
 
+.jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -163,22 +168,6 @@ body {
   }
 }
 
-.main .inputs .seperator {
-  width: 80%;
-  display: block;
-  margin: 1.3rem 0;
-  height: 0.2rem;
-  background-color: #665555;
-}
-
-@media (min-width: 800px) {
-  .main .inputs .seperator {
-    margin: 0;
-    height: 5.7rem;
-    width: 0.2rem;
-  }
-}
-
 .main .inputs .input-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +182,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 1rem;
+  width: 90%;
+}
+
+@media (min-width: 800px) {
+  .main .inputs .input-item {
+    width: 25%;
+    height: 100%;
+  }
+}
+
+.main .inputs .input-item:nth-child(2) {
+  border: solid 3px black;
+  border-left-style: none;
+  border-right-style: none;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+
+@media (min-width: 800px) {
+  .main .inputs .input-item:nth-child(2) {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: none;
+    border-bottom-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .main .inputs label {
@@ -205,11 +220,17 @@ body {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  border: none;
+}
+
+.main .inputs input[type="text"] {
+  padding: 1rem 0;
 }
 
 .main .inputs input[type="date"] {
   position: relative;
   width: 100%;
+  padding: 1rem 0;
 }
 
 .main .inputs input[type="date"]::-webkit-calendar-picker-indicator {
@@ -223,23 +244,6 @@ body {
   color: transparent;
   background: transparent;
   cursor: pointer;
-}
-
-.main .inputs .txt-input input {
-  padding: 1rem 0;
-  border: none;
-}
-
-.main .inputs .date-input {
-  padding: 1rem 2rem;
-  border: none;
-  width: 100%;
-}
-
-@media (min-width: 800px) {
-  .main .inputs .date-input {
-    width: 90%;
-  }
 }
 
 .main .button .search-btn {
