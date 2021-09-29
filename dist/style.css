@@ -76,10 +76,28 @@ body {
 }
 
 body {
-  background-image: url(/assets/images/SPOILER_sven-fischer-V7WkmXntA8M-unsplash.jpg);
+  background-image: url(/assets/images/bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(/assets/images/bg-tablet-medium.jpg);
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    background-image: url(/assets/images/bg-tablet-large.jpg);
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url(/assets/images/bg-desktop.jpg);
+  }
 }
 
 .header {
