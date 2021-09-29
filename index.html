@@ -22,14 +22,14 @@
   <main class="main flex jc-c ai-c">
     <div class="container flex fd-c ai-c">
       <div class="inputs">
-        <ul class="inputs-list flex fd-c ai-c">
-          <li class="input-item txt-input">
+        <form class="inputs-list flex fd-c ai-c">
+          <div class="input-item txt-input">
             <label for="region">where you go?</label>
             <input type="text" id="region" name="region" list="suggestions" placeholder="select a region">
             <datalist id="suggestions"></datalist>
-          </li>
+          </div>
           <span class="seperator"></span>
-          <li class="input-item">
+          <div class="input-item">
             <label for="date-in">check in</label>
             <input type="date"
             class="date-input"
@@ -37,20 +37,21 @@
             name="date-in" 
             placeholder="Add a date"
 						onfocus="this.type='date'"
-						onblur="this.type='text'">
-          </li>
+						onblur="this.type='text'"
+            >
+          </div>
           <span class="seperator"></span>
-          <li class="input-item">
+          <div class="input-item">
             <label for="date-out">check out</label>
-            <input type="date"
+            <input type="text"
             id="date-out"
             name="date-out"
             class="date-input"
             placeholder="add a date"
             onfocus="this.type='date'"
 						onblur="this.type='text'">
-          </li>
-        </ul>
+          </div>
+        </form>
       </div>
       
       <div class="button">

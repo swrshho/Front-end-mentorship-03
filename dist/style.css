@@ -179,7 +179,7 @@ body {
   }
 }
 
-.main .inputs li {
+.main .inputs .input-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +193,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 1rem;
 }
 
 .main .inputs label {
@@ -203,6 +204,7 @@ body {
 .main .inputs input {
   text-align: center;
   cursor: pointer;
+  width: 100%;
 }
 
 .main .inputs input[type="date"] {
@@ -229,9 +231,9 @@ body {
 }
 
 .main .inputs .date-input {
-  margin: 0 1rem;
   padding: 1rem 2rem;
   border: none;
+  width: 100%;
 }
 
 @media (min-width: 800px) {

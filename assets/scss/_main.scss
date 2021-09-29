@@ -92,11 +92,12 @@ body {
       background-color: $darkGray;
     }
 
-    li {
+    .input-item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0 1rem;
     }
 
     label {
@@ -107,6 +108,7 @@ body {
     input {
       text-align: center;
       cursor: pointer;
+      width: 100%;
     }
 
     input[type="date"] {
@@ -137,9 +139,10 @@ body {
       @media (min-width: 800px) {
         width: 90%;
       }
-      margin: 0 1rem;
+
       padding: 1rem 2rem;
       border: none;
+      width: 100%;
     }
   }
 
