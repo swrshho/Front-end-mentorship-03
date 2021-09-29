@@ -16,11 +16,13 @@ I used the Teleport API to make a dynamaic search suggestions section.
 
 ### HTML
 
-**Header**
+#### Header
+
 header contains a navbar tag to be placed exactly in center using flexbox.
 there is also an unfunctional account button.
 
-**Main**
+#### Main
+
 The main elelment consists of a white container div that wraps everything in it, and a form tag that is responsible to wrap all inputs in it.
 every input element is wraped inside of an div for orginizing purposes.
 
